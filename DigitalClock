@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <style>
+        body{
+            background: radial-gradient(
+    circle at top right,
+    #6defe4, #3edf8c, rgb(6, 246, 242)
+  );
+        }
+        .clock_body{
+            margin:0;
+            padding:0;
+            background: linear-gradient(90deg, rgb(8, 172, 164),rgb(127, 222, 225));
+            text-align:center;
+            align-content: center;
+            box-sizing: border-box;
+            border: 2px solid grey;
+            box-shadow: 2px 2px 2px 2px grey;
+            width:30%;
+            position: relative;
+            left:400px;
+            top:200px;
+            border-radius: 10px;
+            height: 20vh;
+        }
+        .clock_body:hover{
+            box-shadow: 2px 2px 3px 3px green;
+            border-radius: 10px;
+        }
+        .clock span{
+            text-align: center;
+            font-size: 40px;
+            font-weight: 800;
+            font-style: italic;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="clock_body">
+        <div class="clock">
+            <span id="hr">00</span>
+            <span id="">:</span>
+            <span id="min">00</span>
+            <span id="">:</span>
+            <span id="sec">00</span>
+        </div>
+    </div>
+
+    <script>
+var hr = document.getElementById("hr");
+var min = document.getElementById("min");
+var sec = document.getElementById("sec");
+
+setInterval(()=>{
+var current_date = new Date();
+hr.innerHTML = (current_date.getHours()<10?"0":"")+current_date.getHours();
+min.innerHTML = (current_date.getMinutes()<10?"0":"")+ current_date.getMinutes();
+sec.innerHTML = (current_date.getSeconds()<10?"0":"")+current_date.getSeconds();
+},1000)
+
+</script>
+</body>
+</html>
