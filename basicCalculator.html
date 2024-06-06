@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Calculator</title>
+    <style>
+      body {
+        margin: auto;
+        padding: 0;
+        box-sizing: border-box;
+        background-image: url("https://img.freepik.com/premium-photo/top-view-blue-calculator-notepad-color-background_260672-4055.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .container {
+        background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+        border: 2px, solid, grey;
+        border-radius: 10px;
+        width: 40vw;
+        height: 67vh;
+        padding: 15px;
+        margin: auto;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        justify-content: center;
+        top: 100px;
+      }
+      #button {
+        font-size: 15px;
+        font-weight: 500;
+        margin: 7px;
+        display: block;
+        width: 20vw;
+        height: 5vh;
+        margin: 10px;
+        background-color: rgb(83, 138, 220);
+        align-items: center;
+        position: relative;
+        left: 120px;
+        border-radius: 20px;
+      }
+      #title {
+        font-size: 30px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        margin-top: -6px;
+        color: red;
+        text-decoration: underline;
+      }
+      #num1,
+      #num2,
+      #results {
+        font-size: 20px;
+        font-weight: 700;
+      }
+      #one,
+      #two {
+        border: 2px, solid, transparent;
+        border-radius: 10px;
+        height: 3vh;
+      }
+      #one:hover,
+      #two:hover{
+        box-shadow: 2px 2px 2px 2px grey;
+        border-color: rgb(88, 221, 228);
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h3 id="title">Basic Calculator</h3>
+      <p id="num1">
+        Number:
+        <input type="text" id="one" placeholder=" Enter one number" />
+      </p>
+      <p id="num2">
+        Number:
+        <input type="text" id="two" placeholder=" Enter another number" />
+      </p>
+      <button id="button" onclick="add()">Add</button>
+      <button id="button" onclick="substract()">Substract</button>
+      <button id="button" onclick="multiply()">Multiply</button>
+      <button id="button" onclick="divide()">Divide</button>
+      <div id="results">Result: <span id="result"></span></div>
+    </div>
+    <script>
+      let result = document.getElementById("result")
+      function callfn(){
+        let one = document.getElementById('one').value
+        let two = document.getElementById('two').value
+        let first = parseInt(one)
+        let second = parseInt(two)
+        const obj = {'first': first,'second': second}
+        return obj;
+      }
+      function add(){
+        const obj = callfn()
+        result.innerHTML = obj['first'] + obj['second']
+      }
+      function substract(){
+        const obj = callfn()
+        result.innerHTML = obj['first'] - obj['second']
+      }
+      function multiply(){
+        const obj = callfn()
+        result.innerHTML = obj['first'] * obj['second']
+      }
+      function divide(){
+        const obj = callfn()
+        result.innerHTML = obj['first'] / obj['second']
+      }
+    </script>
+  </body>
+</html>
