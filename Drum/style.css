@@ -1,0 +1,68 @@
+.body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJllBstUJ3DpJLnUFw3iKLMYSae1HLOkj7PQ&s');
+}
+.keys{
+   background: linear-gradient(90deg,rgb(214, 107, 166),rgb(130, 60, 129),rgb(231, 123, 182));
+   display: grid;
+   grid-template-columns: repeat(4,150px);
+   grid-template-rows: auto;
+   padding: 50px;
+   margin-left: 250px;
+   margin-top: 80px;
+   border: 2px solid grey;
+   width: fit-content;
+   align-items: center;
+   justify-content: center;
+}
+img{
+    width:80px;
+}
+.key{
+    position: relative;
+    border: 2px solid grey;
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    color: red;
+    background: url('assets/images/crash.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+.key:nth-child(2){
+    background: url('assets/images/ride.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+.key:nth-child(3){
+    background: url('assets/images/hi-hats.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+.key:nth-child(4){
+    background: url('assets/images/hi-tom.jpeg');
+    background-repeat: no-repeat;
+    background-size: contain ;
+}
+.key:nth-child(5){
+    background: url('assets/images/snare.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+.key:nth-child(6){
+    background: url('assets/images/floor-tom.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+.key:nth-child(7){
+    background: url('assets/images/base-drum.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+.key:nth-child(8){
+    background: url('assets/images/clap.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
