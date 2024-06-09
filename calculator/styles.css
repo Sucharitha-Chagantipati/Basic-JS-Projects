@@ -1,0 +1,63 @@
+body{
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('https://img.freepik.com/free-photo/blank-notepad-calculator-copy-space_23-2148475383.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    /* border: 2px solid rgb(97, 97, 97); */
+    margin:auto;
+    width: 25vw;
+    height: 65vh;
+    position: relative;
+    top: 70px;
+    border-radius: 5px;
+}
+.prev{
+    background-color:  rgb(222, 174, 210);
+    height: 8vh;
+    font-size: 25px;
+    text-align: end;
+    align-content: flex-end;
+    border-radius: 10px;
+    border: 2px solid rgb(241, 163, 222);
+    margin: 4px;
+    color: rgb(18, 79, 18);
+}
+.current{
+    background-color: rgb(232, 180, 219);
+    height: 8vh;
+    font-size: 30px;
+    align-content: flex-end;
+    text-align: end;
+    border: 2px solid rgb(241, 163, 222);
+    border-radius: 10px;
+    color: rgb(18, 79, 18);
+}
+.numbers{
+    display: grid;
+    grid-template-columns: repeat(4,80px);
+    grid-template-rows: auto;
+    height: 49vh;
+    background-color:  rgb(198, 183, 194);
+    border-radius: 20px;
+    margin-top: 10px;
+}
+#span{
+    grid-column: 1/3;
+}
+#span2{
+    grid-column: 3/5;
+}
+.numbers button{
+    background-color: rgb(29, 236, 174);
+    border-color: rgb(241, 163, 222);
+    border-radius: 20px;
+    margin: 5px;
+    font-size: 20px;
+}
+.numbers button:hover{
+    box-shadow: 2px 2px 2px 2px grey;
+}
