@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+.container{
+    border: 2px solid transparent;
+    width: fit-content;
+    padding: 10px;
+    margin: auto;
+}
+h1{
+    font-size: 30px;
+    font-family:'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-weight: 900;
+    text-decoration: underline;
+    color: rgb(57, 137, 228); 
+    text-align: center;  
+}
+h2{
+    font-size: 35px;
+    font-style: italic;
+    font-family:  Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 100;
+    color: blueviolet;
+    text-orientation: upright;
+}
+h2::before, h2::after{
+    content: '"';
+}
+h3{
+    font-size: 25px;
+    text-align: end;
+    font-style: italic;
+    color: brown;
+}
+h3::before{
+    content: "-- ";
+}
+button{
+    background-color: rgb(44, 84, 245);
+    width: 120px;
+    height: 45px;
+    border-radius: 10px;
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-style: oblique;
+}
