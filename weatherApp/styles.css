@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, #62b8f5, #4475ef);
+    color: white;
+}
+.container{
+    background-color: rgba(247, 245, 245, 0.25);
+    border: 2px solid transparent;
+    padding: 15px;
+    width: 40vw;
+    height: 60vh;
+    margin: auto;
+    margin-top: 60px;
+    text-align: center;
+}
+#city{
+    display: inline-flex;
+    margin-top: 15px;
+}
+#city input{
+    width: 30vw;
+    border: none;
+    border-bottom: 2px solid rgb(225, 220, 220);
+    background-color: transparent;
+    margin: 5px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: white;
+    text-transform: capitalize;
+    padding: 5px;
+    text-align: center;
+}
+#city button{
+      background-color: white;
+      width: 80px;
+      height:40px;
+      border-radius: 10px;
+      color: rgb(73, 94, 199);
+      padding: 8px;
+      font-size: 20px;
+}
+#cityname{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-style: italic;
+    margin: 10px;
+}
+#weatherReport{
+    font-size: 20px;
+    font-family:  Times, serif;
+    font-weight: 600;
+    font-style: italic;
+    margin: 10px;
+}
+#temperature{
+    margin: 10px;
+}
+.container::before{
+   content: '';
+   width: 150px;
+   height: 150px;
+   border: 2px solid transparent;
+   background-color:rgba(255, 255, 255, 0.2);
+   border-radius: 100%;
+   z-index: -1;
+   position: absolute;
+   top: 10px;
+   left: 300px;
+}
+.container::after{
+    content: '';
+   width: 150px;
+   height: 150px;
+   border: 2px solid transparent;
+   background-color:rgba(255, 255, 255, 0.2);
+   border-radius: 100%;
+   z-index: -1;
+   position: absolute;
+   bottom: 60px;
+   right: 300px;
+   z-index: -2;
+}
